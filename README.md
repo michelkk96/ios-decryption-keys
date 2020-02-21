@@ -7,10 +7,10 @@
 ``` Python
 import json
 
-list = json.load(open("firmware-keys-iPad3,1.json"))
+keylist = json.load(open("firmware-keys-iPad3,1.json"))
 
-devicetree_key = list['iPad3,1']['9.1']['keys']['devicetree']
-devicetree_iv = list['iPad3,1']['9.1']['ivs']['devicetree']
+devicetree_key = keylist['iPad3,1']['9.1']['keys']['devicetree']
+devicetree_iv = keylist['iPad3,1']['9.1']['ivs']['devicetree']
 print("Key: " + devicetree_key)
 print(" IV: " + devicetree_iv)
 ```
